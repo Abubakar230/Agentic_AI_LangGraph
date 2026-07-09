@@ -81,6 +81,7 @@ if user_input:
         st.text(user_input)
 
     #CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']}}
+    # Langsmith Observability for multi-threaded conversations
 
     CONFIG = {
         "configurable": {"thread_id": st.session_state["thread_id"]},
