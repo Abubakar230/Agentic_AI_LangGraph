@@ -25,8 +25,8 @@ load_dotenv()
 # 1. LLM + embeddings
 # -------------------
 llm = ChatHuggingFace(llm=HuggingFaceEndpoint(repo_id="Qwen/Qwen2.5-7B-Instruct", task="text-generation"))
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-
+embeddings = HuggingFaceEmbeddings(model_name='Qwen/Qwen3-Embedding-0.6B')
+# embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 # -------------------
 # 2. PDF retriever store (per thread)
 # -------------------
